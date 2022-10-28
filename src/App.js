@@ -1,10 +1,12 @@
 import './App.css';
-import { Profile } from './components'
+import { Links, Profile } from './components';
+
 
 function App() {
   return (
     <div className="App">
       <Profile/>
+      <Links/>
     </div>
   );
 }
