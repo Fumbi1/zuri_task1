@@ -5,9 +5,9 @@ import style from './links.module.css';
 
 const Links = () => {
   return (
-    <div>
+    <div id={style.main}>
       <div>
-        <ExternalLink href='https://twitter.com' target="_blank">Twitter</ExternalLink>
+        <ExternalLink href='https://twitter.com' target="_blank" id={style.twitter_link}>Twitter Link</ExternalLink>
       </div>
       <div>
         <ExternalLink href='https://training.zuri.team/' target="_blank" id={style.btn_zuri}>Zuri Team</ExternalLink>

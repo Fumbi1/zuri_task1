@@ -5,16 +5,20 @@ import profile from '../../assets/profile__img.png';
 
 const Profile = () => {
   return (
-    <div>
+    <div id={style.mainn}>
         <div className={style.main}>
-            <div className={style.profile}>
-                <img src={profile} alt='profile-pics' id={style.profile_img}/>
-                <h1 id={style.twitter}>Olumuyiwa Fumbi</h1>
-                <h1 id={style.slack}>Muyiwa</h1>
-            </div>
-            <div className={style.share}>
-                <RiShareForwardLine />
-            </div>
+          <div className={style.profile}>
+              <img src={profile} alt='profile-pics' id={style.profile_img}/>
+              <h1 id={style.twitter}>Olumuyiwa Fumbi</h1>
+              <h1 id={style.slack}>Muyiwa</h1>
+
+              <div className={style.share}>
+              <RiShareForwardLine />
+              </div>
+              <div className={style.ellipsis}>
+                  
+              </div>
+          </div>
         </div>
     </div>
   )

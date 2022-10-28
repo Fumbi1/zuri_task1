@@ -12,20 +12,30 @@ img {
     max-width: 100%;
 }
 
+#mainn{
+    width: 100%;
+    
+    
+}
+
 .main {
-    display: flex;
-    flex-direction: row;
-    width: 25%;
-    margin-inline: 45%;
-    justify-content: space-between;
     margin-top: 4em;
+    margin-inline: auto;
+    position: relative;
 }
 
 .share {
-   border-radius: 50%;
-   width: 1.5em;
-   height: 1.5em;
-   border: 0.5px solid #D0D5DD;
+    position: absolute;
+    right: 25%;
+    top: -0.5em;
+    border-radius: 50%;
+    width: 1.5em;
+    height: 1.5em;
+    border: 0.5px solid #D0D5DD;
+}
+
+.ellipsis{
+    display: none;
 }
 
 .share svg {
@@ -45,4 +55,24 @@ img {
 
 #slack{
     visibility: hidden;
+}
+
+@media(max-width: 1020px){
+    .share{
+        display: block;
+    }
+    .ellipsis{
+        display: none;
+    }
+
+    .share {
+        position: absolute;
+        right: 5%;
+        top: -0.5em;
+        border-radius: 50%;
+        width: 1.5em;
+        height: 1.5em;
+        border: 0.5px solid #D0D5DD;
+    }
+    
 }

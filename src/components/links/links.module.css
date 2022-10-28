@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+#main{
+    width: 100%;
+}
+
+#main div{
+    margin: 1.5em auto;
+    padding-block: 1.5em;
+    width: 80%;
+    background: #EAECF0;
+    border: 1px solid #EAECF0;
+    border-radius: 8px;
+}
+
+#twitter_link{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: #101828;
+    margin-inline: auto;
+    text-decoration: none;
+}
+
+#btn_zuri{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: #101828;
+    margin-inline: auto;
+    text-decoration: none;
+}
+
+#books{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: #101828;
+    margin-inline: auto;
+    text-decoration: none;
+}
+
+#book_python{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: #101828;
+    margin-inline: auto;
+    text-decoration: none;
+}
+
+#pitch{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: #101828;
+    margin-inline: auto;
+    text-decoration: none;
+}
+
+#book_design{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: #101828;
+    margin-inline: auto;
+    text-decoration: none;
+}
