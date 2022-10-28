@@ -1,3 +1,4 @@
+import { Route, Routes } from 'react-router-dom';
 import './App.css';
 import { Links, Profile } from './components';
 
@@ -6,7 +7,7 @@ function App() {
   return (
     <div className="App">
       <Profile/>
-      <Links/>
+      <Links />
     </div>
   );
 }

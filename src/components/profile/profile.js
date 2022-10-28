@@ -9,7 +9,8 @@ const Profile = () => {
         <div className={style.main}>
             <div className={style.profile}>
                 <img src={profile} alt='profile-pics' id={style.profile_img}/>
-                <h1>Annette Black</h1>
+                <h1 id={style.twitter}>Olumuyiwa Fumbi</h1>
+                <h1 id={style.slack}>Muyiwa</h1>
             </div>
             <div className={style.share}>
                 <RiShareForwardLine />
