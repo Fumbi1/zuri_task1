@@ -59,13 +59,10 @@ img {
 
 @media(max-width: 1020px){
     .share{
-        display: block;
-    }
-    .ellipsis{
         display: none;
     }
-
-    .share {
+    .ellipsis{
+        display: block;
         position: absolute;
         right: 5%;
         top: -0.5em;
@@ -73,6 +70,10 @@ img {
         width: 1.5em;
         height: 1.5em;
         border: 0.5px solid #D0D5DD;
+    }
+
+    .share svg{
+        color: transparent;
     }
     
 }

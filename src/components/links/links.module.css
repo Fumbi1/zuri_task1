@@ -86,3 +86,9 @@ html{
     margin-inline: auto;
     text-decoration: none;
 }
+
+@media(max-width: 720px){
+    #main div{
+        width: 95%;
+    }
+}
