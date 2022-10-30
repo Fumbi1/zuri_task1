@@ -24,6 +24,14 @@ img {
     position: relative;
 }
 
+#profile_img{
+    width: 10em;
+    height: 10em;
+    margin: 0 auto;
+    border: transparent;
+    border-radius: 50%;
+}
+
 .share {
     position: absolute;
     right: 25%;
