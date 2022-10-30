@@ -44,4 +44,12 @@ html{
     #book_design, #pitch, #book_python, #books, #btn_zuri, #twitter_link{
         width: 95%;
     }
+
+    #icons{
+        width: 15%;
+        margin: 1em auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
 }
