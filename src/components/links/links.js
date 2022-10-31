@@ -9,6 +9,13 @@ import Footer from '../footer/footer';
 const Links = () => {
   return (
     <div id={style.main}>
+      <a href=''></a>
+      <a href=''></a>
+      <a href=''></a>
+      <a href=''></a>
+      <a href=''></a>
+      <a href=''></a>
+
       <ExternalLink href='https://twitter.com' target="_blank" id={style.twitter_link}>Twitter Link</ExternalLink>
       <ExternalLink href='https://training.zuri.team/' target="_blank" id={style.btn_zuri}>Zuri Team</ExternalLink>
       <ExternalLink href='https://books.zuri.team' target="_blank" id={style.books}>Zuri Books</ExternalLink>
