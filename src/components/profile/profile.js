@@ -1,23 +1,23 @@
 import React from 'react';
-import { RiShareForwardLine } from 'react-icons/ri';
-import { CiCircleMore } from 'react-icons/ci'
-import style from './profile.module.css';
+import share from '../../assets/share.png'
+import menu from '../../assets/menu.png'
+import './profile.css';
 import selfie from '../../assets/selfie.jpg';
 
 const Profile = () => {
   return (
-    <div id={style.mainn}>
-        <div className={style.main}>
-          <div className={style.profile}>
-            <img src={selfie} alt='profile-pics' id={style.profile_img}/>
-            <h1 id={style.twitter}>Olumuyiwa Fumbi</h1>
-            <h1 id={style.slack}>Muyiwa</h1>
+    <div id='mainn'>
+        <div className='main'>
+          <div className='profile'>
+            <img src={selfie} alt='profile-pics' id='profile__img'/>
+            <h1 id='twitter'>Olumuyiwa Fumbi</h1>
+            <h1 id='slack'>Muyiwa</h1>
 
-            <div className={style.share}>
-              <RiShareForwardLine />
+            <div className='share'>
+              <img src={share} alt='' />
             </div>
-            <div className={style.ellipsis}>
-              <CiCircleMore />
+            <div className='ellipsis'>
+            <img src={menu} alt='' />
             </div>
           </div>
         </div>

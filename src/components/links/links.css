@@ -14,7 +14,7 @@ html{
     flex-direction: column;
 }
 
-#book_design, #pitch, #book_python, #books, #btn_zuri, #twitter_link{
+#book__design, #pitch, #book__python, #books, #btn__zuri, #twitter__link{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 500;
@@ -41,7 +41,7 @@ html{
 }
 
 @media(max-width: 720px){
-    #book_design, #pitch, #book_python, #books, #btn_zuri, #twitter_link{
+    #book__design, #pitch, #book__python, #books, #btn__zuri, #twitter__link{
         width: 95%;
     }
 

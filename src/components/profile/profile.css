@@ -24,7 +24,7 @@ img {
     position: relative;
 }
 
-#profile_img{
+#profile__img{
     width: 10em;
     height: 10em;
     margin: 0 auto;
@@ -36,19 +36,12 @@ img {
     position: absolute;
     right: 25%;
     top: -0.5em;
-    border-radius: 50%;
-    width: 1.5em;
-    height: 1.5em;
-    border: 0.5px solid #D0D5DD;
 }
 
 .ellipsis{
     display: none;
 }
 
-.share svg {
-    color: #98A2B3;
-}
 
 #twitter {
   margin-top: 1.25em;
@@ -62,7 +55,7 @@ img {
 }
 
 #slack{
-    visibility: hidden;
+    display: none;
 }
 
 @media(max-width: 1020px){
@@ -74,10 +67,6 @@ img {
         position: absolute;
         right: 5%;
         top: -0.5em;
-        border-radius: 50%;
-        width: 1.5em;
-        height: 1.5em;
-        border: 0.5px solid #D0D5DD;
     }
 
     .share svg{
