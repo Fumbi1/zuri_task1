@@ -1,28 +1,47 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './contactpage.css'
 
+
 const Contactpage = () => {
+  const [radioState, setRadioState] = useState(false);
+
+  function handleClick(){
+      setRadioState(radioState => !radioState);
+  }
+
   return (
     <form>
-    <p>Contact Me</p>
-    <p>Hi there, contact me to ask me about anything you have in mind.</p>
+    <p id='contact_me'>Contact Me</p>
+    <p id='contact_desc'>Hi there, contact me to ask me about anything you have in mind.</p>
 
-    <div>
-      <label for='first_name'>First name</label>
-      <input type='text' placeholder='Enter your first name' id='first_name' />
-      <label for='last_name'>Last name</label>
-      <input type='text' placeholder='Enter your last name' id='last_name' />
+    <div id='name_section'>
+      <div>
+        <label for='first_name' className='name_label'>First name</label><br/>
+        <input type='text' placeholder='Enter your first name' id='first_name' />
+      </div>
+      <div>
+        <label for='last_name' className='name_label'>Last name</label><br/>
+        <input type='text' placeholder='Enter your last name' id='last_name' />
+      </div>
     </div>
 
-    <label for='email'>Email</label>
-    <input type='email' placeholder='yourname@email.com' id='email' />
-    <label for=''>Email</label>
-    <textarea placeholder="Send me a message and I'll reply you as soon as possible..." id='message' />
+    <div id='email_section'>
+      <label for='email' className='name_label'>Email</label><br/>
+      <input type='email' placeholder='yourname@email.com' id='email' />
+    </div>
 
-    <input type='radio' id='radio'name='toggle' />
-    <label for='radio'>You agree to providing your data to Olumuyiwa Famuagun who may contact you.</label>
+    <div id='message_section'>
+      <label for='message' className='name_label'>Message</label><br/>
+      <textarea placeholder="Send me a message and I'll reply you as soon as possible..." id='message' />
+    </div>
+    
+    <div>
+      <input type='radio' id='radio' onClick={handleClick} checked=
+      {radioState} />
+      <label for='radio' id='radio_label'>You agree to providing your data to <span>Olumuyiwa Famuagun</span> who may contact you.</label>
+    </div>
 
-    <button id='btn__submit'></button>
+    <button disabled={!radioState} onClick={()=> console.log("Hellow")} id='btn__submit'>Send message</button>
   </form>
   )
 }
