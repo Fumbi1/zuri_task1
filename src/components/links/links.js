@@ -3,6 +3,7 @@ import'./links.css';
 import slack from '../../assets/slack.png'
 import git from '../../assets/Icon.png'
 import Footer from '../footer/footer';
+import Contact from '../contactlink/contactlink';
 
 
 const Links = () => {
@@ -15,6 +16,7 @@ const Links = () => {
       <a href='https://books.zuri.team/python-for-beginners?ref_id=<Muyiwa>' target="_blank" id='book__python' rel="noreferrer" title='The HNG handbook helps to progress further in your tech-based career'>Python Books</a>
       <a href='https://background.zuri.team' target="_blank" id='pitch' rel="noreferrer" title='We help you to find the right person for your specific jobs by running background checks'>Background Check for Coders</a>
       <a href='https://books.zuri.team/design-rules' target="_blank" id='book__design' rel="noreferrer" title='The HNG Design Rules Books gives helpful information on becoming the best designer you wish to be!'>Design Books</a>
+      <Contact />
 
       <div id='icons'>
       <a href='https://slack.com' target="_blank" rel="noreferrer"><img src={slack} alt='' /></a>
@@ -26,4 +28,4 @@ const Links = () => {
   )
 }
 
-export default Links
+export default Links;

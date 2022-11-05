@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 16px;
+}
+
+#contact{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: #101828;
+    margin-inline: auto;
+    text-decoration: none;
+
+    margin: 0.75em auto;
+    padding-block: 1.5em;
+    width: 80%;
+    background: #EAECF0;
+    border: 1px solid #EAECF0;
+    border-radius: 8px;
+}
+
+@media(max-width: 720px){
+    #contact{
+        width: 95%;
+    }
+}
