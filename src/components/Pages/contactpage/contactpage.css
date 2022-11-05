@@ -10,10 +10,13 @@ html{
     font-size: 16px;
 }
 
+#form_section{
+    width: 100%;
+}
+
 form{
     width: 50%;
     margin-inline: auto;
-    border: Red 2px solid;
     padding-block: 10em;
 }
 
@@ -74,6 +77,7 @@ form{
     font-weight: 400;
     font-size: 1rem;
     line-height: 1.5em;
+    margin-bottom: 1.5em;
 
 }
 
@@ -105,11 +109,14 @@ form{
     resize: none;
 }
 
+#radio_section{
+    margin-block: 2em;
+}
+
 #radio{
     margin-right: 0.875em;
     border: 1px solid #D0D5DD;
     border-radius: 6px;
-    margin-block: 2em;
 }
 
 #radio_label{
@@ -143,4 +150,24 @@ span{
 
 #btn__submit:disabled{
     opacity: 0.5;
+}
+
+@media(max-width: 1000px){
+    form{
+        width: 75%;
+    }
+}
+
+@media(max-width: 720px){
+    form{
+        width: 95%;
+    }
+    #name_section{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #name_section div{
+        width: 100%;
+    }
 }
