@@ -109,17 +109,17 @@ form{
     resize: none;
 }
 
-#radio_section{
+#checkbox_section{
     margin-block: 2em;
 }
 
-#radio{
+#checkbox{
     margin-right: 0.875em;
     border: 1px solid #D0D5DD;
     border-radius: 6px;
 }
 
-#radio_label{
+#checkbox_label{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;

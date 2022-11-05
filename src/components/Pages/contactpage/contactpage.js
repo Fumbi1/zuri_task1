@@ -4,11 +4,18 @@ import Footer from '../../footer/footer';
 
 
 const Contactpage = () => {
-  const [radioState, setRadioState] = useState(false);
+  const [disableState, setDisableState] = useState(true);
 
   function handleClick(){
-      setRadioState(radioState => !radioState);
+      setDisableState(disableState => !disableState);
   }
+
+  const uponClick = (e) => {
+    e.preventDefault();
+    alert("Message has been delivered");
+  }
+
+  let name = "Olumuyiwa Famuagun";
 
   return (
     <div id='form_section'>
@@ -18,28 +25,27 @@ const Contactpage = () => {
         <div id='name_section'>
           <div>
             <label for='first_name' className='name_label'>First name</label><br/>
-            <input type='text' placeholder='Enter your first name' id='first_name'/>
+            <input type='text' placeholder='Enter your first name' id='first_name' required />
           </div>
           <div>
             <label for='last_name' className='name_label'>Last name</label><br/>
-            <input type='text' placeholder='Enter your last name' id='last_name' />
+            <input type='text' placeholder='Enter your last name' id='last_name' required />
           </div>
         </div>
         <div id='email_section'>
           <label for='email' className='name_label'>Email</label><br/>
-          <input type='email' placeholder='yourname@email.com' id='email' />
+          <input type='email' placeholder='yourname@email.com' id='email' required />
         </div>
         <div id='message_section'>
           <label for='message' className='name_label'>Message</label><br/>
           <textarea placeholder="Send me a message and I'll reply you as soon as possible..." id='message' />
         </div>
         
-        <div id='radio_section'>
-          <input type='radio' id='radio' onClick={handleClick} checked=
-          {radioState} />
-          <label for='radio' id='radio_label'>You agree to providing your data to <span>Olumuyiwa Famuagun</span> who may contact you.</label>
+        <div id='checkbox_section'>
+          <input type='checkbox' id='checkbox' onClick={handleClick}  />
+          <label for='checkbox' id='checkbox_label'>You agree to providing your data to <span>{name}</span> who may contact you.</label>
         </div>
-        <button disabled={!radioState} id='btn__submit'>Send message</button>
+        <button disabled={disableState} id='btn__submit' onClick={uponClick}>Send message</button>
       </form>
 
       <Footer />
