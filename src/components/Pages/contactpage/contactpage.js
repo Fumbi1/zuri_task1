@@ -19,7 +19,7 @@ const Contactpage = () => {
 
   return (
     <div id='form_section'>
-      <form>
+      <form onSubmit={uponClick}>
         <p id='contact_me'>Contact Me</p>
         <p id='contact_desc'>Hi there, contact me to ask me about anything you have in mind.</p>
         <div id='name_section'>
@@ -45,7 +45,7 @@ const Contactpage = () => {
           <input type='checkbox' id='checkbox' onClick={handleClick}  />
           <label for='checkbox' id='checkbox_label'>You agree to providing your data to <span>{name}</span> who may contact you.</label>
         </div>
-        <button disabled={disableState} id='btn__submit' onClick={uponClick}>Send message</button>
+        <button disabled={disableState} id='btn__submit'>Send message</button>
       </form>
 
       <Footer />
